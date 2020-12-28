@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ЮФУ</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yufu</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <section class="yufu">
-        <div class="header">
-            <h1>Южный Федеральный Университет</h1>
+  
+<section class="registration">
+  <video autoplay loop muted class="bgvideo" id="bgvideo">
+    <source src="videos/bg-video4.mp4" type="video/mp4"></source>
+  </video>
+    <div class="registration-main">
+      <h1>Система самого лучшего обучения ИКТИб ЮФУ</h1>
+      <hr>
+      <div class="registration-main__block">
+        <div class="registration-main__block-1">
+          <form class="feed-form" id="consultation-form" action="#">
+            <input name="name" class="main-input" required placeholder="Логин" type="text"  />
+            <input name="email" class="main-input" required placeholder="Пароль" type="password"  />
+            
+            <div class="feed-form__chose">
+              <input type="checkbox" class='feed-form__chose-btn'>
+              <span class="chek-text">Запомнить логин</span>
+            </div>
+
+            <button class="btn-consult">ВХОД</button>
+          </form>
         </div>
-        <div class="img">
-            <img class="main-img_1" src="img/main_img.jpg"/>
+        <div class="registration-main__block-2">
+          <a href="#" class="return-login">Забыли логин или пароль?</a>
+          <p class="registration-main__text">В Вашем браузере должен <br> быть разрешен прием cookies</p>
         </div>
-        <div class="text1">
-            <h2>Южный Федеральный Университет</h2>
-        </div>
-        <div class="main-text">
-            <p class="main-text_text1">Персонал университета «Южный Федеральный Университет» знает, как улучшить традиционное обучение. 
-            За счет уникального подхода и самых квалифицированных преподавателей Университет «Южный Федеральный 
-            Университет» дает не столько образование, сколько полноценный жизненный опыт. 
-            Приглашаем вас познакомиться с динамичным и ярким сообществом. Приходите в любое время.</p>
-        </div>
-        <div class="button">
-            <button class="button-main">ВХОД</button>
-        </div>
-        <div class="img">
-            <img class="main-img_1" src="img/img-2.jpg"/>
-        </div>
-        
-    </section>
-    
+      </div>
+    </div>
+    <!-- /.registration-main -->
+  
+</section>
+<!-- /.registration -->
+
 </body>
 </html>
