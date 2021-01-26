@@ -2,6 +2,7 @@
   display: flex
   justify-content: space-between
   align-items: center
+  position: relative
   padding: 30px 20px
   background: #313131
   font-family: Roboto
@@ -9,9 +10,41 @@
   font-weight: normal
   font-size: 25px
   color: #FBFBFB
+  a
+    color: #FBFBFB
+    text-decoration: none
   span
     font-size: 15px
     cursor: pointer
+    color: #FBFBFB
+
+.dropdown-header
+  display: none
+
+.dropdown-header_show
+  display: block
+  position: absolute
+  width: 215px
+  text-align: center
+  background-color: #f6f6f6
+  border: 1px solid #ddd
+  z-index: 1
+  top: 97px
+  right: 20px
+
+.dropdown-header a 
+  color: black
+  padding: 12px 16px
+  text-decoration: none
+  display: block
+  border: 1px solid silver
+  font-size: 20px
+  
+
+.dropdown-header a:hover
+  background-color: #000000
+  color: #ffffff
+
 .attendance
   &_title
     font-family: Roboto
@@ -23,6 +56,8 @@
     justify-content: space-between
     align-items: center
     margin-top: 30px
+    position: relative
+    padding: 0 20px
   &_choise
     display: flex
     flex-direction: column
@@ -34,6 +69,8 @@
       margin-left: 5px
       cursor: pointer
       font-family: 'Roboto'
+      font-size: 15px
+      font-weight: 500
   &_input
     width: 200px
     height: 50px
@@ -44,9 +81,64 @@
     font-family: Roboto
     font-style: normal
     font-weight: 400
-    font-size: 25px
+    font-size: 20px
     padding: 8px
     padding-left: 20px
+    &:focus
+      outline: none
+
+
+.dropdown-content 
+  display: none
+
+.dropdown-contentshow 
+  display: block
+  position: absolute
+  width: 200px
+  background-color: #f6f6f6
+  border: 1px solid #ddd
+  z-index: 1
+  li
+    list-style-type: none
+   
+
+.dropdown-content a 
+  color: black
+  padding: 12px 16px
+  text-decoration: none
+  display: block
+  border: 1px solid silver
+
+.dropdown-content a:hover
+  background-color: #000000
+  color: #ffffff
+
+.dropdown-content_two 
+  display: none
+
+.dropdown-contentshow_two
+  display: block
+  position: absolute
+  width: 200px
+  background-color: #f6f6f6
+  border: 1px solid #ddd
+  z-index: 1
+  top: 70px
+  left: 295px
+  li
+    list-style-type: none
+
+.dropdown-content_two a 
+  color: black
+  padding: 12px 16px
+  text-decoration: none
+  display: block
+  border: 1px solid silver
+
+.dropdown-content_two a:hover
+  background-color: #000000
+  color: #ffffff
+
 
     
 

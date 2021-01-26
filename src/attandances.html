@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,14 +16,45 @@
 <section class="attendance">
   <div class="header">
     <div class="header_title">ЮФУ</div>
-    <div class="header_office">Личный кабинет <span>&#9660;</span></div>
+    <a href="#" class="header_office" id="headerInput" onblur="headerDrop()" onfocus="headerDropNo()">Личный кабинет <span>&#9660;</span></a>
+    <div id="headerDropdown" class="dropdown-header">
+      <a href="#about">Посещаемость</a>
+      <a href="#base">Редактировать</a>
+      <a href="#blog">Мои группы</a>
+      <a href="#blog">Выход</a>
+    </div>
   </div>
 
   <div class="container">
     <h2 class="attendance_title">Посещаемость</h2>
     <div class="attendance_main">
-      <input type="text" class="attendance_input" placeholder="Предмет">
-      <input type="text" class="attendance_input" placeholder="Группа">
+      <!--  -->
+        <div id="myListDrop">
+          <input type="text" class="attendance_input" placeholder="Предмет" id="myInput" onblur="myFunc()" onfocus="myFunction()">
+          <div id="myDropdown" class="dropdown-content">
+            <li><a href="#about">Физика</a></li>
+            <li><a href="#base">Химия</a></li>
+            <li><a href="#blog">Информатика</a></li>
+            <li><a href="#blog">Математика</a></li>
+            <li><a href="#blog">Программирование</a></li>
+          </div>
+        </div>
+
+        <div id="myListDropTwo">
+          <input type="text" class="attendance_input" placeholder="Группа" id="myInputTwo" onblur="myFuncTwo()" onfocus="myFunctionTwo()">
+          <div id="myDropdownTwo" class="dropdown-content_two">
+            <li><a href="#about">КТсо1-1</a></li>
+            <li><a href="#base">КТсо1-2</a></li>
+            <li><a href="#blog">КТсо1-3</a></li>
+            <li><a href="#blog">КТсо1-4</a></li>
+            <li><a href="#about">КТсо2-1</a></li>
+            <li><a href="#base">КТсо2-2</a></li>
+            <li><a href="#blog">КТсо2-3</a></li>
+            <li><a href="#blog">КТсо2-4</a></li>
+            <li><a href="#blog">КТсо2-5</a></li>
+          </div>
+        </div>
+
       <div class="attendance_choise">
         <div class="chek_block1">
           <input id="attendance_check1" class="attendance_check" type="checkbox" /><label for="attendance_check1">Лабораторное занятие</label>
@@ -41,6 +73,6 @@
 <!-- /.attendance -->
 
 <hr class="line" color="#ffffff" size="5">
-
+<script src="js/attandances.js"></script>
 </body>
 </html>
